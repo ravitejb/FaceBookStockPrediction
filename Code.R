@@ -10,7 +10,7 @@ names(FB)
 plot(as.Date(Date), Close,type='l',xlab='Time',ylab='Close Prices',main='Daily Close Prices of FaceBook')
 
 #create the stock as time series plot
-close_stock = ts(Close, start = 1, end = length(Close), frequency = 1)
+close_stock1 = ts(Close, start = 1, end = length(Close), frequency = 1)
 
 #checking the statinority of data
 adf.test(close_stock, alternative = "stationary")
